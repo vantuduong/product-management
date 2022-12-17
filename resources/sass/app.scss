@@ -1,0 +1,21 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+.anticon {
+    vertical-align: 0!important;
+}
+
+.ant-btn > .anticon {
+    line-height: 0!important;
+}
+
+.ant-btn-icon-only > i {
+    vertical-align: 0!important;
+}
