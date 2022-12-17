@@ -193,6 +193,7 @@ export default {
                         });
 
                         this.$store.dispatch('updateProduct', {id: this.productId, data: formData}).then((res) => {
+                            this.uploadList = [];
                             this.$router.push("/products");
                         });
                     }
@@ -235,7 +236,7 @@ export default {
                 }
                 this.uploadList = this.uploadList.concat(selectedFile);
             }
-            console.log(this.uploadList);
+
             return false;
         }
     },
